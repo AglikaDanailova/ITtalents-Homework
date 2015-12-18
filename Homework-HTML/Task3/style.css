@@ -1,0 +1,61 @@
+@CHARSET "UTF-8";
+
+body {
+    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    text-align: justify;
+}
+
+header {
+    height: 10%;
+    width: 100%;
+   }
+h1 {
+	text-align: center;
+	color: #5F9EA0;
+}
+
+.main {
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Navigation */
+
+nav {
+    padding: 0; 
+    display: inline-block;
+    margin-top: 10%;
+    clear: both;
+}
+
+nav ul {
+ 
+      list-style-type: none;
+}
+
+a {
+   color: #3E454C;	
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px 0;
+    line-height: 20px;
+}
+
+
+nav li a:hover { 
+       color: #A4CFBE;
+}
+
+.current {
+    color: #0099FF;
+    border-bottom: solid;
+}
+
+footer {
+        text-align: center;
+        font-size: small;
+}

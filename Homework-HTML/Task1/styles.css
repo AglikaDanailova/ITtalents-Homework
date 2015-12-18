@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+
+body {
+	font-family:'Arvo', serif;
+}
+
+div {
+	margin: 3px;
+	padding: 3px;
+}
+
+legend {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+fieldset{
+	width: 50%;
+}
+
+button {
+	float: right;
+}
