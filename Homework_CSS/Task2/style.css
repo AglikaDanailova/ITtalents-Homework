@@ -1,0 +1,48 @@
+
+header {
+    height: 10%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: darkolivegreen;
+    padding: 3px;
+}
+
+main{
+    height: 79%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    clear: both;
+    display: inline-block;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#one {
+    height: 100%;
+    min-height: 300px;
+    width: 20%;
+    background-color: purple;
+    float: left;
+    margin-right:3px;
+}
+
+#two {
+    height: 100%;
+    min-height: 300px;
+    width: 79%;
+    background-color: blue;
+    float: right;
+}
+
+
+footer{
+    height: 10%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: cadetblue;
+    padding: 3px;
+}
+

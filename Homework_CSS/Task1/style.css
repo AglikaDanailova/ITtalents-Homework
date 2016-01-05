@@ -1,0 +1,38 @@
+
+header {
+    margin: 0;
+    height: 10%;
+    width: 100%;
+    background-color: darkolivegreen;
+}
+
+main{
+    height: 79%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: cadetblue;
+    min-height: 300px;
+}
+
+
+footer{
+    height: 10%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#one {
+    height: 100%;
+    width: 49.4%;
+    background-color: purple;
+    float: left;
+}
+
+#two {
+    height: 100%;
+    width: 49.4%;
+    background-color: blue;
+    float: right;
+}

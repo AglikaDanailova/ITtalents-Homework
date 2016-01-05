@@ -1,0 +1,55 @@
+
+header {
+    height: 10%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: darkolivegreen;
+    padding: 3px;
+}
+
+main{
+    height: 79%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    clear: both;
+    display: inline-block;
+    padding: 3px;
+}
+
+#one {
+    height: 100%;
+    min-height: 300px;
+    width: 20%;
+    background-color: purple;
+    float: left;
+    margin-right:3px;
+}
+
+#two {
+    height: 100%;
+    min-height: 300px;
+    width: 59%;
+    background-color: blue;
+    float: left;
+    margin-right:3px;
+}
+#three {
+    height: 100%;
+    min-height: 300px;
+    width: 20%;
+    background-color: #ed88ff;
+    float: left;
+}
+
+
+footer{
+    height: 10%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: cadetblue;
+    padding: 3px;
+}
+
