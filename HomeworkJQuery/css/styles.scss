@@ -1,0 +1,50 @@
+
+#frame td {
+  padding:30px;
+}
+
+input {
+  margin: 5px;
+  width: 150px;
+  height: 20px;
+}
+
+fieldset{
+  width: 500px;
+  height: auto;
+}
+
+#add {
+  float: right;
+  width: 100px;
+  height: 25px;
+  border: solid 3px #ba30c7;
+}
+#add:hover {
+  cursor: pointer;
+  border: solid 3px darkolivegreen;
+}
+
+#table{
+  display: none;
+}
+
+#table table{
+  border: solid 3px silver;
+
+}
+
+legend {
+  font-weight: bold;
+}
+
+.alerts {
+  font-size: smaller;
+  font-weight: bold;
+  color: #ff517c;
+  float: right;
+}
+.control {
+  height: 30px;
+  width: 30px;
+}
