@@ -75,7 +75,7 @@ $('#delete').click(function(e){
 });
 
 
-$('#delete').click(function deleteRow() {
-    $(this).parent('tr').;
-
-});
+//$('#delete').click(function deleteRow() {
+//    $(this).parent('tr').;
+//
+//});
