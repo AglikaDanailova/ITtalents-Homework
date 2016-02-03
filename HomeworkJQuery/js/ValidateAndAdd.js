@@ -25,7 +25,7 @@ $(document).ready(function(){
         e.preventDefault();
     });
 
-
+    var cars = [];
 
     $('#add').click(function checkForm() {
 
@@ -38,26 +38,44 @@ $(document).ready(function(){
 
             $('fieldset').css("border", "1px solid #threedface");
             $('form p').remove();
-            var cars = [];
-            function add () {
-                cars.pushStack({
-                    "make": $('#make').val(),
-                    "model": $('#model').val(),
-                    "year": $('#year').val(),
-                    "km": $('#km').val()
+
+            var make = $('#make').val();
+            var model = $('#model').val();
+            var year = $('#year').val();
+            var km = $('#km').val();
+
+                cars.push({
+                    "make": make,
+                    "model": model,
+                    "year": year,
+                    "km": km
                 });
-                return cars;
-            };
-            console.log(cars);
-            $('#table').css("display","block");
-            $('#table table').append("<tr><td>" + "1</td><td>"+
-                cars.make + "</td><td>"+
-                cars.model + "</td><td>"+
-                cars.year + "</td><td>"+
-                cars.km +
-                "</td><td><button class='control'></button><button class='control'></button></td></tr>");
-            //$('#make, #model, #year, #km').val('').css("border", "1px solid #threedface");
-        }
-    });
+
+            var num = $('#table tr').length - 1;
+            var order = $('#table tr').length;
+
+                $('#table').css("display","block");
+                $('#table table').append("<tr><td>" +
+                    order + "</td><td>"+
+                    cars[num].make + "</td><td>"+
+                    cars[num].model + "</td><td>"+
+                    cars[num].year + "</td><td>"+
+                    cars[num].km +
+                    "</td><td><button class='control' id='edit'>E</button><button class='control' id='delete'>X</button></td></tr>");
+
+            }
+
+            $('#make, #model, #year, #km').val('').css("border", "1px solid #threedface");
+        });
+
+});
+
+$('#delete').click(function(e){
+    e.preventDefault();
+});
+
+
+$('#delete').click(function deleteRow() {
+    $(this).parent('tr').;
 
 });
