@@ -44,38 +44,54 @@ $(document).ready(function(){
             var year = $('#year').val();
             var km = $('#km').val();
 
-                cars.push({
-                    "make": make,
-                    "model": model,
-                    "year": year,
-                    "km": km
-                });
+            cars.push({
+                "make": make,
+                "model": model,
+                "year": year,
+                "km": km
+            });
 
             var num = $('#table tr').length - 1;
             var order = $('#table tr').length;
 
-                $('#table').css("display","block");
-                $('#table table').append("<tr><td>" +
-                    order + "</td><td>"+
-                    cars[num].make + "</td><td>"+
-                    cars[num].model + "</td><td>"+
-                    cars[num].year + "</td><td>"+
-                    cars[num].km +
-                    "</td><td><button class='control' id='edit'>E</button><button class='control' id='delete'>X</button></td></tr>");
+            $('#table').css("display","block");
+            $('#table table').append("<tr><td>" +
+                order + ".</td><td>"+
+                cars[num].make + "</td><td>"+
+                cars[num].model + "</td><td>"+
+                cars[num].year + "</td><td>"+
+                cars[num].km +
+                "</td><td><button class='edit' id='" + num + "'></button><button class='delete' id='" + num +"'></button></td></tr>");
 
-            }
+        }
 
-            $('#make, #model, #year, #km').val('').css("border", "1px solid #threedface");
+        $('#make, #model, #year, #km').val('').css("border", "1px solid #threedface");
+
+        $('.delete').click(function(e){
+            e.preventDefault();
         });
 
+
+        $('.delete').click(function deleteRow() {
+            var confirmation = confirm('Are you sure you want to delete this row?');
+            if (confirmation == true) {
+                $(this).parents('#table tr').remove();
+            };
+
+        });
+
+
+        //$('.edit').click(function(e){
+        //    e.preventDefault();
+        //});
+        //
+        //
+        //$('.edit').click(function editRow() {
+        //    $('#form').css("display","none");
+        //    $('#table').css("display","none");
+        //    $('#editTable').css("display","block");
+        //    $('#editMake').attr("value='1'");
+        //
+        //});
+    });
 });
-
-$('#delete').click(function(e){
-    e.preventDefault();
-});
-
-
-//$('#delete').click(function deleteRow() {
-//    $(this).parent('tr').;
-//
-//});

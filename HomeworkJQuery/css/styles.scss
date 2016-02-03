@@ -1,3 +1,11 @@
+$buttonSize : 25px;
+$borderSize: solid 3px;
+
+@mixin hover () {
+  cursor: pointer;
+  border: $borderSize darkolivegreen;
+}
+
 
 #frame td {
   padding:30px;
@@ -18,33 +26,57 @@ fieldset{
   float: right;
   width: 100px;
   height: 25px;
-  border: solid 3px #ba30c7;
-}
-#add:hover {
-  cursor: pointer;
-  border: solid 3px darkolivegreen;
+  border: $borderSize #c63a7d;
 }
 
-#table{
-  display: none;
-}
+#add:hover {@include hover;}
 
-#table table{
-  border: solid 3px silver;
+  #table{
+    display: none;
+  }
 
-}
+  #table table{
+    border: $borderSize #c63a7d;
 
-legend {
-  font-weight: bold;
-}
+  }
 
-.alerts {
-  font-size: smaller;
-  font-weight: bold;
-  color: #ff517c;
-  float: right;
-}
-.control {
-  height: 30px;
-  width: 30px;
-}
+  caption {
+    font-size: large;
+    font-weight: bold;
+  }
+
+  legend {
+    font-weight: bold;
+  }
+
+  .alerts {
+    font-size: smaller;
+    font-weight: bold;
+    color: #ff517c;
+    float: right;
+  }
+
+  .delete{
+    background: url(../images/delete.png) no-repeat;
+    height: $buttonSize;
+    width: $buttonSize;
+    margin: 2px;
+    border: $borderSize #ba30c7;
+  }
+
+  .delete:hover {@include hover;}
+
+  .edit{
+    background: url(../images/edit.png) no-repeat;
+    height: $buttonSize;
+    width: $buttonSize;
+    margin: 2px;
+    border: $borderSize #ba30c7;
+  }
+
+ .edit:hover {@include hover;}
+
+ #editTable {
+   display: none;
+ }
+

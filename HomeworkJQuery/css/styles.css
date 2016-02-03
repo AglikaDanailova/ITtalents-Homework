@@ -14,7 +14,7 @@ fieldset {
   float: right;
   width: 100px;
   height: 25px;
-  border: solid 3px #ba30c7; }
+  border: solid 3px #c63a7d; }
 
 #add:hover {
   cursor: pointer;
@@ -24,7 +24,11 @@ fieldset {
   display: none; }
 
 #table table {
-  border: solid 3px silver; }
+  border: solid 3px #c63a7d; }
+
+caption {
+  font-size: large;
+  font-weight: bold; }
 
 legend {
   font-weight: bold; }
@@ -35,8 +39,29 @@ legend {
   color: #ff517c;
   float: right; }
 
-.control {
-  height: 30px;
-  width: 30px; }
+.delete {
+  background: url(../images/delete.png) no-repeat;
+  height: 25px;
+  width: 25px;
+  margin: 2px;
+  border: solid 3px #ba30c7; }
+
+.delete:hover {
+  cursor: pointer;
+  border: solid 3px darkolivegreen; }
+
+.edit {
+  background: url(../images/edit.png) no-repeat;
+  height: 25px;
+  width: 25px;
+  margin: 2px;
+  border: solid 3px #ba30c7; }
+
+.edit:hover {
+  cursor: pointer;
+  border: solid 3px darkolivegreen; }
+
+#editTable {
+  display: none; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -6,8 +6,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/styles.scss">
     <script type="text/javascript" src="js\jquery-2.2.0.min.js"></script>
-    <script type="text/javascript" src="js\ValidateAndAdd.js"></script>
-    <script type="text/javascript" src="js\Delete.js"></script>
+    <script type="text/javascript" src="js\js.js"></script>
 </head>
 <body>
 <table id="frame">
@@ -41,7 +40,7 @@
         <td>
             <div id="table">
                 <table border="1">
-                    <caption>My Car Wish List</caption>
+                    <caption>My Car Wish List <3</caption>
                         <tr>
                             <th>#</th>
                             <th>Make</th>
@@ -51,6 +50,30 @@
                             <th>Edit/Delete</th>
                         </tr>
                 </table>
+            </div>
+            <div id="editTable">
+                <form action="" method="post">
+                    <fieldset>
+                        <legend>Enter changes</legend>
+                        <div>
+                            <label for="make">Make:</label>
+                            <input type="text" name="make" id="editMake">
+                        </div><br/>
+                        <div>
+                            <label for="model">Model:</label>
+                            <input type="text" name="model" id="editModel">
+                        </div><br/>
+                        <div>
+                            <label for="year">Year of manufacture:</label>
+                            <input type="text" name="year" id="editYear">
+                        </div><br/>
+                        <div>
+                            <label for="km">Kilometres:</label>
+                            <input type="text" name="km" id="editKm">
+                        </div><br/>
+                        <button id="makeChange">Edit</button>
+                    </fieldset>
+                </form>
             </div>
         </td>
     </tr>
