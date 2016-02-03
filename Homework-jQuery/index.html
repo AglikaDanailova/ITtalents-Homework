@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.scss">
+    <script type="text/javascript" src="js\jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="js\ValidateAndAdd.js"></script>
+    <script type="text/javascript" src="js\Delete.js"></script>
+</head>
+<body>
+<table id="frame">
+    <tr>
+        <td>
+            <div id="form">
+                <form action="" method="post">
+                    <fieldset>
+                        <legend>Add car</legend>
+                        <div>
+                            <label for="make">Make:</label>
+                            <input type="text" name="make" id="make">
+                        </div><br/>
+                        <div>
+                            <label for="model">Model:</label>
+                            <input type="text" name="model" id="model">
+                        </div><br/>
+                        <div>
+                            <label for="year">Year of manufacture:</label>
+                            <input type="text" name="year" id="year">
+                        </div><br/>
+                        <div>
+                            <label for="km">Kilometres:</label>
+                            <input type="text" name="km" id="km">
+                        </div><br/>
+                    <button id="add">Add</button>
+                    </fieldset>
+                </form>
+            </div>
+        </td>
+        <td>
+            <div id="table">
+                <table border="1">
+                    <caption>My Car Wish List</caption>
+                        <tr>
+                            <th>#</th>
+                            <th>Make</th>
+                            <th>Model</th>
+                            <th>Year of Manufacture</th>
+                            <th>Kilometres</th>
+                            <th>Edit/Delete</th>
+                        </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
